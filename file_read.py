@@ -14,8 +14,6 @@ class FileRead(ABC):
     """
     def __init__(self, file_path: str):
         """
-        Receives a file path,
-        verifies if the file path is indeed to a file and not to a folder
         :param file_path: file path
         """
         self.file_path = file_path
@@ -25,7 +23,7 @@ class FileRead(ABC):
         else:
             raise Exception("this is not a file , please enter a valid path")
 
-    def size(self):
+    def size(self) -> int:
         """
         Find the size of the file
         :return: file size
@@ -33,7 +31,7 @@ class FileRead(ABC):
         file_size = os.path.getsize(self.file_path)
         return file_size
 
-    def name(self):
+    def name(self) -> str:
         """
         Finds the name of the file that is in the path
         :return: file name
@@ -44,6 +42,6 @@ class FileRead(ABC):
     @abstractmethod
     def read(self):
         """
-        An abstract method that will be used during inheritance
+        reads what the file contains
         """
         pass
