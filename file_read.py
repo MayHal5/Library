@@ -1,5 +1,5 @@
 """
-    An abstract class that accepts a file path
+    Running functions from other modules
     Author: Maysan Halaby
     Date: 03/03/2024
 """
