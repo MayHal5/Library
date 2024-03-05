@@ -13,7 +13,7 @@ class CsvReader(FileRead):
     A class inherited from the main class
     and implements an abstract method
     """
-    def read(self, num_of_char: int = 5):
+    def read(self, max_num_of_char: int = 5):
         """
         Opens a file in read mode and calls the "print_csv_as_table" function
         to print the contents of the Csv file in the format defined in the function
@@ -22,7 +22,7 @@ class CsvReader(FileRead):
             list_rows = csv.reader(csvfile)
             for row in list_rows:
                 for cell in row:
-                    print_csv_file.print_csv_as_table(num_of_char, cell)
+                    print_csv_file.print_csv_as_table(max_num_of_char, cell)
                 print()
 
 

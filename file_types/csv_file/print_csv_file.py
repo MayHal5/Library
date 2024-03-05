@@ -6,15 +6,15 @@
 """
 
 
-def print_csv_as_table(num_of_char, cell):
+def print_csv_as_table(max_num_of_char, cell):
     """
     Prints according to a certain format
     It is used in the CsvReader class
     :param:num_of_char: Maximum number of characters
     :param:cell:
     """
-    difference1 = num_of_char - len(cell)
+    difference1 = max_num_of_char - len(cell)
     if difference1 > 0:
-        print(cell[:num_of_char], end=f"{' ' * difference1}| ")
+        print(cell[:max_num_of_char], end=f"{' ' * difference1}| ")
     else:
-        print(cell[:num_of_char], end="| ")
+        print(cell[:max_num_of_char], end="| ")
