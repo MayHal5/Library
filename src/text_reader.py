@@ -3,7 +3,7 @@
     Author: Maysan Halaby
     Date: 04/03/2024
 """
-from file_types.file_read.file_read import FileRead
+from src.file_read import FileRead
 
 
 class TextReader(FileRead):
