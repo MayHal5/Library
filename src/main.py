@@ -4,15 +4,14 @@
     Date: 03/03/2024
 """
 
-import file_read
-import file_types.json_reader
+import src.json_reader
 
 
 def main():
     """
     Entry point
     """
-    file_path = file_types.json_reader.JsonReader(r"C:\Users\User\Documents\name_singer.json")
+    file_path = src.json_reader.JsonReader(r"C:\Users\User\Documents\name_singer.json")
     file_path.read()
 
 

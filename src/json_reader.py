@@ -5,7 +5,7 @@
 """
 
 import json
-from file_read import FileRead
+from src.file_read import FileRead
 
 
 class JsonReader(FileRead):
