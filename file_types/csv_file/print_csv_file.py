@@ -6,7 +6,7 @@
 """
 
 
-def print_csv_as_table(max_num_of_char, cell):
+def print_csv_as_table(max_num_of_char: int, cell: str):
     """
     Prints according to a certain format
     It is used in the CsvReader class
